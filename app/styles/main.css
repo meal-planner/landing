@@ -1,0 +1,199 @@
+body {
+  margin: 0px 0px;
+}
+
+#hero {
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+}
+
+#tint {
+  width: 100%;
+  height: 100%;
+  background: #7f7f7f;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  font-size: 36px;
+  -ms-transform: translate(0, -50%); /* IE 9 */
+  -webkit-transform: translate(0, -50%); /* Safari */
+  transform: translate(0, -50%);
+}
+
+.header .logo {
+  width: 33%;
+}
+
+.header h4 {
+  font-family: 'Lora', serif;
+  margin: 16px 0;
+}
+
+.bg-1 {
+  background-image: url("../images/bg-1.jpg");
+}
+
+.bg-1 #tint {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.bg-2 {
+  background-image: url("../images/bg-2.jpg");
+}
+
+.bg-3 {
+  background-image: url("../images/bg-3.jpg");
+}
+
+.bg-4 {
+  background-image: url("../images/bg-4.jpg");
+}
+
+.bg-4 #tint {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.bg-5 {
+  background-image: url("../images/bg-5.jpg");
+}
+
+.bg-5 #tint {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.bg-6 {
+  background-image: url("../images/bg-6.jpg");
+}
+
+.bg-6 #tint {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.bg-7 {
+  background-image: url("../images/bg-7.jpg");
+}
+
+.bg-8 {
+  background-image: url("../images/bg-8.jpg");
+}
+
+.bg-9 {
+  background-image: url("../images/bg-9.jpg");
+}
+
+.bg-9 #tint {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.bg-10 {
+  background-image: url("../images/bg-10.jpg");
+}
+
+.bg-11 {
+  background-image: url("../images/bg-11.jpg");
+}
+
+.bg-11 #tint {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.bg-12 {
+  background-image: url("../images/bg-12.jpg");
+}
+
+.bg-13 {
+  background-image: url("../images/bg-13.jpg");
+}
+
+.bg-14 {
+  background-image: url("../images/bg-14.jpg");
+}
+
+@media (orientation: portrait) {
+  .bg-1, .bg-2, .bg-3, .bg-4 {
+    background-image: url("../images/bg-portrait-1.jpg");
+  }
+
+  .bg-5, .bg-6, .bg-7, .bg-8 {
+    background-image: url("../images/bg-portrait-2.jpg");
+  }
+
+  .bg-9, .bg-10, .bg-11 {
+    background-image: url("../images/bg-portrait-3.jpg");
+  }
+
+  .bg-12, .bg-13, .bg-14 {
+    background-image: url("../images/bg-portrait-4.jpg");
+  }
+
+  .header h4 {
+    font-size: 0.7em;
+  }
+
+  .header .logo {
+    width: 75%;
+  }
+}
+
+.open-button-container {
+  position: absolute;
+  top: 85%;
+  text-align: center;
+  width: 100%;
+}
+
+#content {
+  padding: 100px 50px;
+  text-align: center;
+  width: 80%;
+  margin: 0px auto;
+}
+
+#content h2 {
+  margin: 0px 0px 30px 0px;
+}
+
+#footer {
+  padding: 30px 0px;
+  text-align: center;
+  background: #ddd;
+}
+
+.emerald-flat-button {
+  position: relative;
+  vertical-align: top;
+  width: 240px;
+  height: 60px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #43A047;
+  border: 0;
+  border-bottom: 2px solid #2E7D32;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #2E7D32;
+  box-shadow: inset 0 -2px #2E7D32;
+  outline: none;
+}
+
+.emerald-flat-button:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+@media (orientation: portrait) {
+  .emerald-flat-button {
+    width: 50%;
+  }
+}
