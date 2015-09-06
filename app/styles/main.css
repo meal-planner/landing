@@ -37,7 +37,7 @@ body {
 }
 
 .bg-1 {
-  background-image: url("../images/bg-1.jpg");
+  background-image: url("http://content.meal-planner.org/landing/bg-1.jpg");
 }
 
 .bg-1 #tint {
@@ -45,15 +45,15 @@ body {
 }
 
 .bg-2 {
-  background-image: url("../images/bg-2.jpg");
+  background-image: url("http://content.meal-planner.org/landing/bg-2.jpg");
 }
 
 .bg-3 {
-  background-image: url("../images/bg-3.jpg");
+  background-image: url("http://content.meal-planner.org/landing/bg-3.jpg");
 }
 
 .bg-4 {
-  background-image: url("../images/bg-4.jpg");
+  background-image: url("http://content.meal-planner.org/landing/bg-4.jpg");
 }
 
 .bg-4 #tint {
@@ -61,7 +61,7 @@ body {
 }
 
 .bg-5 {
-  background-image: url("../images/bg-5.jpg");
+  background-image: url("http://content.meal-planner.org/landing/bg-5.jpg");
 }
 
 .bg-5 #tint {
@@ -69,7 +69,7 @@ body {
 }
 
 .bg-6 {
-  background-image: url("../images/bg-6.jpg");
+  background-image: url("http://content.meal-planner.org/landing/bg-6.jpg");
 }
 
 .bg-6 #tint {
@@ -77,15 +77,15 @@ body {
 }
 
 .bg-7 {
-  background-image: url("../images/bg-7.jpg");
+  background-image: url("http://content.meal-planner.org/landing/bg-7.jpg");
 }
 
 .bg-8 {
-  background-image: url("../images/bg-8.jpg");
+  background-image: url("http://content.meal-planner.org/landing/bg-8.jpg");
 }
 
 .bg-9 {
-  background-image: url("../images/bg-9.jpg");
+  background-image: url("http://content.meal-planner.org/landing/bg-9.jpg");
 }
 
 .bg-9 #tint {
@@ -93,11 +93,11 @@ body {
 }
 
 .bg-10 {
-  background-image: url("../images/bg-10.jpg");
+  background-image: url("http://content.meal-planner.org/landing/bg-10.jpg");
 }
 
 .bg-11 {
-  background-image: url("../images/bg-11.jpg");
+  background-image: url("http://content.meal-planner.org/landing/bg-11.jpg");
 }
 
 .bg-11 #tint {
@@ -105,32 +105,32 @@ body {
 }
 
 .bg-12 {
-  background-image: url("../images/bg-12.jpg");
+  background-image: url("http://content.meal-planner.org/landing/bg-12.jpg");
 }
 
 .bg-13 {
-  background-image: url("../images/bg-13.jpg");
+  background-image: url("http://content.meal-planner.org/landing/bg-13.jpg");
 }
 
 .bg-14 {
-  background-image: url("../images/bg-14.jpg");
+  background-image: url("http://content.meal-planner.org/landing/bg-14.jpg");
 }
 
 @media (orientation: portrait) {
   .bg-1, .bg-2, .bg-3, .bg-4 {
-    background-image: url("../images/bg-portrait-1.jpg");
+    background-image: url("http://content.meal-planner.org/landing/bg-portrait-1.jpg");
   }
 
   .bg-5, .bg-6, .bg-7, .bg-8 {
-    background-image: url("../images/bg-portrait-2.jpg");
+    background-image: url("http://content.meal-planner.org/landing/bg-portrait-2.jpg");
   }
 
   .bg-9, .bg-10, .bg-11 {
-    background-image: url("../images/bg-portrait-3.jpg");
+    background-image: url("http://content.meal-planner.org/landing/bg-portrait-3.jpg");
   }
 
   .bg-12, .bg-13, .bg-14 {
-    background-image: url("../images/bg-portrait-4.jpg");
+    background-image: url("http://content.meal-planner.org/landing/bg-portrait-4.jpg");
   }
 
   .header h4 {
