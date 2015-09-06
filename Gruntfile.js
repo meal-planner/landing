@@ -325,6 +325,27 @@ module.exports = function (grunt) {
       }
     },
 
+    buildcontrol: {
+      options: {
+        dir: 'dist',
+        commit: true,
+        push: true,
+        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+      },
+      production: {
+        options: {
+          remote: 'git@5apps.com:ayastreb_meal-planner-landing.git',
+          branch: 'master'
+        }
+      },
+      local: {
+        options: {
+          remote: '../',
+          branch: 'build'
+        }
+      }
+    },
+
     // Run some tasks in parallel to speed up build process
     concurrent: {
       server: [
@@ -401,4 +422,6 @@ module.exports = function (grunt) {
     'test',
     'build'
   ]);
+
+  grunt.loadNpmTasks('grunt-build-control');
 };
