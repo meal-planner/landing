@@ -369,15 +369,9 @@ module.exports = function (grunt) {
         dir: 'dist',
         commit: true,
         push: true,
-        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+        message: 'Built Meal-Planner.org landing site from commit %sourceCommit% on branch %sourceBranch%'
       },
-      production: {
-        options: {
-          remote: 'git@5apps.com:ayastreb_meal-planner-landing.git',
-          branch: 'master'
-        }
-      },
-      pages: {
+      github: {
         options: {
           remote: 'git@github.com:meal-planner/landing.git',
           branch: 'gh-pages'
