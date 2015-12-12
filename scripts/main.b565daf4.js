@@ -1,0 +1,1 @@
+!function(){$(document).ready(function(){for(var a=[],b=1;15>=b;b++)a.push("bg-"+b);$("#hero").addClass(a[Math.floor(Math.random()*a.length)])})}();
