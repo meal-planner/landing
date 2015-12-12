@@ -245,28 +245,66 @@ module.exports = function (grunt) {
       }
     },
 
-    //htmlmin: {
-    //  dist: {
-    //    options: {
-    //      collapseBooleanAttributes: true,
-    //      collapseWhitespace: true,
-    //      conservativeCollapse: true,
-    //      removeAttributeQuotes: true,
-    //      removeCommentsFromCDATA: true,
-    //      removeEmptyAttributes: true,
-    //      removeOptionalTags: true,
-    //      // true would impact styles with attribute selectors
-    //      removeRedundantAttributes: false,
-    //      useShortDoctype: true
-    //    },
-    //    files: [{
-    //      expand: true,
-    //      cwd: '<%= config.dist %>',
-    //      src: '{,*/}*.html',
-    //      dest: '<%= config.dist %>'
-    //    }]
-    //  }
-    //},
+    htmlmin: {
+      dist: {
+        options: {
+          collapseBooleanAttributes: true,
+          collapseWhitespace: true,
+          conservativeCollapse: true,
+          removeAttributeQuotes: true,
+          removeCommentsFromCDATA: true,
+          removeEmptyAttributes: true,
+          removeOptionalTags: true,
+          // true would impact styles with attribute selectors
+          removeRedundantAttributes: false,
+          useShortDoctype: true
+        },
+        files: [{
+          expand: true,
+          cwd: '<%= config.dist %>',
+          src: '{,*/}*.html',
+          dest: '<%= config.dist %>'
+        }]
+      }
+    },
+
+    realFavicon: {
+      myIcon: {
+        src: '<%= config.app %>/images/icon.png',
+        dest: '<%= config.dist %>',
+        options: {
+          html: ['<%= config.dist %>/index.html'],
+          design: {
+            desktop_browser: {},
+            ios: {
+              picture_aspect: 'background_and_margin',
+              background_color: '#ffffff',
+              margin: 2
+            },
+            // WindowsPhone options
+            windows: {
+              picture_aspect: 'no_change',
+              background_color: '#ffffff'
+            },
+            // Android Chrome options
+            android_chrome: {
+              picture_aspect: 'shadow',
+              manifest: {
+                name: 'Meal-Planner.org',
+                display: 'standalone',
+                orientation: 'portrait',
+                start_url: '/index.html'
+              },
+              theme_color: '#42bd41'
+            },
+          },
+        },
+        settings: {
+          compression: 5,
+          scaling_algorithm: 'NearestNeighbor'
+        }
+      }
+    },
 
     // By default, your `index.html`'s <!-- Usemin block --> will take care
     // of minification. These next options are pre-configured if you do not
@@ -306,7 +344,8 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             'images/{,*/}*.webp',
             '{,*/}*.html',
-            'styles/fonts/{,*/}*.*'
+            'styles/fonts/{,*/}*.*',
+            'CNAME'
           ]
         }, {
           expand: true,
@@ -419,7 +458,9 @@ module.exports = function (grunt) {
     'uglify',
     'copy:dist',
     'filerev',
-    'usemin'
+    'realFavicon',
+    'usemin',
+    'htmlmin'
   ]);
 
   grunt.registerTask('default', [
