@@ -295,7 +295,7 @@ module.exports = function (grunt) {
                 orientation: 'portrait',
                 start_url: '/index.html'
               },
-              theme_color: '#42bd41'
+              theme_color: '#259b24'
             },
           },
         },
