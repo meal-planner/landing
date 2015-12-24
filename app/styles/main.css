@@ -46,14 +46,15 @@ body {
 
 .carousel-indicators {
   bottom: 0;
-  left: 350px;
-  margin: 0 0 4px 0;
+  left: 0;
+  margin: 0;
   height: 28px;
   padding-top: 4px;
-  width: 100px;
+  width: 100%;
 }
 
 .carousel-indicators li {
+  float: right;
   width: 16px;
   height: 16px;
   margin: 1px 10px 1px 1px;
