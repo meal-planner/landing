@@ -463,5 +463,11 @@ module.exports = function (grunt) {
     'build'
   ]);
 
+  grunt.registerTask('deploy', [
+    'test',
+    'build',
+    'buildcontrol:github'
+  ]);
+
   grunt.loadNpmTasks('grunt-build-control');
 };
