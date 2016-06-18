@@ -12,7 +12,7 @@ body {
   width: 100%;
   height: 100%;
   background: #7f7f7f;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .full-screen {
@@ -20,9 +20,93 @@ body {
   margin: 64px auto;
 }
 
+.featurette-heading {
+  color: rgb(90, 90, 90);
+  font-family: 'PT Serif', serif;
+  font-size: 50px;
+  line-height: 1;
+  letter-spacing: -1px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.featurette-divider {
+  margin: 80px 0;
+}
+
+.lead {
+  color: rgb(90, 90, 90);
+  font-family: 'PT Serif', serif;
+  text-align: justify;
+}
+
+.carousel {
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.14), 0px 2px 2px 0px rgba(0, 0, 0, 0.098), 0px 1px 5px 0px rgba(0, 0, 0, 0.084);
+}
+
+.carousel-indicators {
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  height: 28px;
+  padding-top: 4px;
+  width: 100%;
+}
+
+.carousel-indicators li {
+  float: right;
+  width: 16px;
+  height: 16px;
+  margin: 1px 10px 1px 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background: #c3c3c3;
+  border: 3px solid #c3c3c3;
+  border-radius: 50%;
+}
+
+.carousel-indicators .active {
+  width: 16px;
+  height: 16px;
+  margin: 1px 10px 1px 1px;
+  background: #FFFFFF;
+}
+
+.carousel.fade {
+  opacity: 1;
+}
+
+.carousel.fade .item {
+  -moz-transition: opacity ease-in-out .7s;
+  -o-transition: opacity ease-in-out .7s;
+  -webkit-transition: opacity ease-in-out .7s;
+  transition: opacity ease-in-out .7s;
+  left: 0 !important;
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: block !important;
+  z-index: 1;
+}
+
+.carousel.fade .item:first-child {
+  top: auto;
+  position: relative;
+}
+
+.carousel.fade .item.active {
+  opacity: 1;
+  -moz-transition: opacity ease-in-out .7s;
+  -o-transition: opacity ease-in-out .7s;
+  -webkit-transition: opacity ease-in-out .7s;
+  transition: opacity ease-in-out .7s;
+  z-index: 2;
+}
+
 .header {
   position: absolute;
-  top: 25%;
+  top: 50%;
   text-align: center;
   width: 100%;
   color: #fff;
@@ -33,36 +117,14 @@ body {
 }
 
 .header .logo {
-  width: 25%;
+  width: 33%;
 }
 
 .header h4 {
   font-family: 'Lora', serif;
-  font-size: 24px;
+  font-size: 32px;
   font-weight: bold;
-  margin: 20px 0;
-}
-
-.value-container {
-  position: absolute;
-  top: 40%;
-  text-align: center;
-  width: 100%;
-  color: #fff;
-  font-family: 'Lora', serif;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 1.5;
-}
-
-.newsletter-text {
-  text-align: center;
-  width: 100%;
-  color: #fff;
-  font-family: 'Lora', serif;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 16px;
+  margin: 28px 0;
 }
 
 .bg-1 {
@@ -70,7 +132,7 @@ body {
 }
 
 .bg-1 #tint {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .bg-2 {
@@ -86,7 +148,7 @@ body {
 }
 
 .bg-4 #tint {
-  background: rgba(0, 0, 0, 0.55);
+  background: rgba(0, 0, 0, 0.45);
 }
 
 .bg-5 {
@@ -94,7 +156,7 @@ body {
 }
 
 .bg-5 #tint {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .bg-6 {
@@ -102,7 +164,7 @@ body {
 }
 
 .bg-6 #tint {
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.35);
 }
 
 .bg-7 {
@@ -118,7 +180,7 @@ body {
 }
 
 .bg-9 #tint {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .bg-10 {
@@ -130,7 +192,7 @@ body {
 }
 
 .bg-11 #tint {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .bg-12 {
@@ -150,83 +212,8 @@ body {
 }
 
 .bg-15 #tint {
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.35);
 }
-
-.open-button-container {
-  position: absolute;
-  top: 75%;
-  text-align: center;
-  width: 100%;
-}
-
-.open-button-container .clear {
-  display: none;
-}
-
-.inline-open-button {
-  width: 100%;
-  margin: 60px auto;
-  text-align: center;
-}
-
-#content {
-  padding: 100px 50px;
-  text-align: center;
-  width: 80%;
-  margin: 0px auto;
-}
-
-#content h2 {
-  margin: 0px 0px 30px 0px;
-}
-
-#footer {
-  padding: 30px 0px;
-  text-align: center;
-  background: #ddd;
-}
-
-.flat-input {
-  height: 60px;
-  width: 25%;
-  border: none;
-  padding-left: 12px;
-  padding-right: 12px;
-  font-size: 22px;
-  color: #18411b;
-  border-bottom: 2px solid #2E7D32;
-  -webkit-box-shadow: inset 0 -2px #2E7D32;
-  box-shadow: inset 0 -2px #2E7D32;
-  outline: none;
-}
-
-.emerald-flat-button {
-  position: relative;
-  vertical-align: top;
-  width: 240px;
-  height: 60px;
-  padding: 0;
-  font-size: 22px;
-  color: white;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-  background: #43A047;
-  border: 0;
-  border-bottom: 2px solid #2E7D32;
-  cursor: pointer;
-  -webkit-box-shadow: inset 0 -2px #2E7D32;
-  box-shadow: inset 0 -2px #2E7D32;
-  outline: none;
-}
-
-.emerald-flat-button:active {
-  top: 1px;
-  outline: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
 
 @media (orientation: portrait) {
   .bg-1, .bg-2, .bg-3, .bg-4 {
@@ -245,12 +232,8 @@ body {
     background-image: url("//content.meal-planner.org/landing/bg-portrait-4.jpg");
   }
 
-  .header {
-    top: 20%;
-  }
-
   .header h4 {
-    font-size: 0.6em;
+    font-size: 0.7em;
   }
 
   .header .logo {
@@ -282,30 +265,66 @@ body {
     padding-top: 8px;
     width: 100%;
   }
+}
 
-  .value-container {
-    top: 32%;
-    font-size: 18px;
-  }
+.open-button-container {
+  position: absolute;
+  top: 85%;
+  text-align: center;
+  width: 100%;
+}
 
-  .newsletter-text {
-    font-size: 14px;
-  }
+.inline-open-button {
+  width: 100%;
+  margin: 60px auto;
+  text-align: center;
+}
 
-  .open-button-container {
-    top: 60%;
-  }
+#content {
+  padding: 100px 50px;
+  text-align: center;
+  width: 80%;
+  margin: 0px auto;
+}
 
-  .open-button-container .clear {
-    display: block;
-  }
+#content h2 {
+  margin: 0px 0px 30px 0px;
+}
 
-  .flat-input {
-    width: 80%;
-    text-align: center;
-  }
+#footer {
+  padding: 30px 0px;
+  text-align: center;
+  background: #ddd;
+}
 
+.emerald-flat-button {
+  position: relative;
+  vertical-align: top;
+  width: 240px;
+  height: 60px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #43A047;
+  border: 0;
+  border-bottom: 2px solid #2E7D32;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #2E7D32;
+  box-shadow: inset 0 -2px #2E7D32;
+  outline: none;
+}
+
+.emerald-flat-button:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+@media (orientation: portrait) {
   .emerald-flat-button {
-    width: 80%;
+    width: 50%;
   }
 }

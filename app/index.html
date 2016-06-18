@@ -31,28 +31,77 @@
         <img src="images/logo.svg" class="logo"/>
         <h4>Recipe recommendation and nutrition balancing service</h4>
       </div>
-      <div class="value-container">
-        Get your daily meals plan with healthy and delicious recipes!<br/>
-        Meal-Planner.org will provide you with great recipes to match your individual nutritional needs.<br/>
-      </div>
-
       <div class="open-button-container">
-        <div class="newsletter-text">
-          Our website is still in development, but we will let you know about launch date if you subscribe in the form bellow!
-        </div>
-        <!-- Begin MailChimp Signup Form -->
-        <form action="//meal-planner.us1.list-manage.com/subscribe/post?u=55d728e8aa6c3c1d727af4f3b&amp;id=312c7e8474" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <div id="mc_embed_signup_scroll">
-            <input type="email" value="" name="EMAIL" class="flat-input" id="mce-EMAIL" placeholder="email address" required>
-            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_55d728e8aa6c3c1d727af4f3b_312c7e8474" tabindex="-1" value=""></div>
-            <div class="clear"></div>
-            <input type="submit" value="Subscribe Now!" name="subscribe" id="mc-embedded-subscribe" class="emerald-flat-button">
-          </div>
-        </form>
-        <!--End mc_embed_signup-->
+        <input type="button" onclick="location.href='//app.meal-planner.org'"
+               value="Open Planner"
+               class="emerald-flat-button">
       </div>
     </div>
+  </div>
+
+  <div id="screen-features" class="full-screen container-fluid">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">What is Meal Planner?</h2>
+
+        <p class="lead">
+          Meal Planner is a free open-source application, that allows you to create well-balanced weekly meal
+          plans.
+        </p>
+
+        <p class="lead">
+          Are you interested in how to meet your daily protein requirement on a vegetarian diet?
+          How to get enough vitamins and minerals without food supplements?
+          Or you just want to stay on a healthy diet?
+        </p>
+
+        <p class="lead">
+          Then Meal Planner is for you!
+        </p>
+      </div>
+      <div class="col-md-5">
+
+        <div id="carousel-what-is" class="carousel fade" data-ride="carousel" data-interval="5000">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-what-is" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-what-is" data-slide-to="1"></li>
+            <li data-target="#carousel-what-is" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img class="featurette-image img-responsive center-block"
+                   src="//content.meal-planner.org/landing/planner-overview-compressed.png"
+                   title="Meal Planner interface overview: breakfast"
+                   alt="Meal Planner interface overview: breakfast">
+            </div>
+            <div class="item">
+              <img class="featurette-image img-responsive center-block"
+                   src="//content.meal-planner.org/landing/planner-energy-chart-compressed.png"
+                   title="Energy chart shows where does the energy comes from."
+                   alt="Energy chart shows where does the energy comes from.">
+            </div>
+            <div class="item">
+              <img class="featurette-image img-responsive center-block"
+                   src="//content.meal-planner.org/landing/planner-nutrition-facts-compressed.png"
+                   title="Summary nutrition facts shows detailed information for all meals of the day."
+                   alt="Summary nutrition facts shows detailed information for all meals of the day.">
+            </div>
+          </div>
+        </div><!-- Carousel -->
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row inline-open-button">
+    <input type="button" onclick="location.href='//app.meal-planner.org'"
+           value="Open Planner"
+           class="emerald-flat-button">
   </div>
 </div>
 
